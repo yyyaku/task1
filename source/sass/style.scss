@@ -1,10 +1,3 @@
-// Vendor
-// ---------------------------------
-
-@import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
-
 // Global
 // ---------------------------------
 
@@ -18,11 +11,20 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/navbar";
+@import "blocks/main";
+@import "blocks/leftcolumn";
+@import "blocks/middlecolumn";
+@import "blocks/chat-item";
+@import "blocks/message";
+@import "blocks/message-date-group";
+@import "blocks/chat-info";
+@import "blocks/help-chat";
+@import "blocks/consultation";
+@import "blocks/accordion";
+@import "blocks/addendum";
+@import "blocks/options";
+
 
 // ---------------------------------
 

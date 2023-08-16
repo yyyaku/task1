@@ -1,0 +1,26 @@
+.help-chat {
+  position: relative;
+  display: flex;
+  gap: 0 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 33%;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/help.png");
+    background-size: 18px 18px;
+  }
+}
+
+.help-chat__item {
+  color: #3a3c41;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 13px;
+}

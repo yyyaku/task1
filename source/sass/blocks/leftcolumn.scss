@@ -1,0 +1,23 @@
+.leftcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.leftcolumn__header {
+  padding: 13px 10px;
+  width: 100%;
+  height: 66px;
+  border: 1px solid #dfe3ec;
+  border-width: 0 1px 1px 0;
+}
+
+.leftcolumn-input {
+  padding: 13px 10px;
+}
+
+.leftcolumn-input span {
+  color: #a1a7b6;
+  font-family: $ff-open-sans-italic;
+  font-size: 13px;
+}

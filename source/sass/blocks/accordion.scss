@@ -1,0 +1,84 @@
+.accordion {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.accordion__content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 12px;
+  background-color: #fafafa;
+}
+
+.accordion__mark {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #bec2cc;
+}
+
+.accordion__text {
+  display: flex;
+  align-items: center;
+  gap: 0 22px;
+  margin-left: 25px;
+}
+
+.accordion__text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.accordion__text p {
+  margin: -6px 0;
+  color: #b9bdc8;
+  font-family: $ff-open-sans-italic;
+  font-size: 11px;
+}
+
+.accordion__content button {
+  position: relative;
+  align-self: center;
+  width: 36px;
+  padding: 0;
+  color: transparent;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion__arrow {
+  position: absolute;
+  top: -6px;
+  display: inline-flex;
+  width: 9px;
+  height: 8px;
+  border-top: 1px solid #102654;
+  border-right: 1px solid #102654;
+  transform: rotate(135deg);
+  cursor: pointer;
+}
+
+.accordion__input[type="checkbox"]:checked + .accordion__content {
+  background-color: #ffffff;
+
+  .accordion__mark {
+    background-color: #83b3d3;
+  }
+}

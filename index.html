@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Italic.woff2" as="font" crossorigin="anonymous">
+  <title>Chat</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main>
+      <div class="container">
+        <section class="navbar">
+          <button class="navbar__toggle" type="button" aria-label="Меню.">Site menu</button>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#">
+                <svg width="16" height="16">
+                  <use href="img/sprite.svg#complains"></use>
+                </svg>
+                Complains
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#">
+                <svg width="16" height="18">
+                  <use href="img/sprite.svg#notes"></use>
+                </svg>
+                Previous Notes
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#">
+                <svg width="16" height="17">
+                  <use href="img/sprite.svg#patent"></use>
+                </svg>
+                Patient
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#">
+                <svg width="18" height="17">
+                  <use href="img/sprite.svg#medic"></use>
+                </svg>
+                Medical records
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#">
+                <svg width="18" height="18">
+                  <use href="img/sprite.svg#chat"></use>
+                </svg>
+                Chat
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="main">
+          <section class="leftcolumn">
+            <div class="leftcolumn__header chat-item">
+              <div class="chat-item__status">
+                <div class="chat-item__avatar">
+                  <img src="./img/JessicaAdams.jpg" width="40" height="40" alt="Jessica Adams.">
+                </div>
+                <div class="chat-item__badge">
+                  <div class="chat-item__online"></div>
+                </div>
+              </div>
+              <div class="chat-item__info">
+                <div class="chat-item__row">
+                  <h3>Jessica Adams</h3>
+                  <button class="chat-item__button" type="button" aria-label="Open setting."></button>
+                </div>
+                <div class="chat-item__subtitle">
+                  <p>55 y.o, Female, 3’ 10’’, 150 lbs</p>
+                </div>
+              </div>
+            </div>
+            <div class="message">
+              <div class="message__list">
+                <div class="message__content">
+                  <div class="message-date-group message-date-group--no-started">
+                    <img src="img/no-chat.png" width="42" height="38" alt="No started consultation.">
+                    <h3>Chat will be available</h3>
+                    <p>when you started consultation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="leftcolumn__footer">
+              <div class="leftcolumn-input">
+                <span>Your message here...</span>
+              </div>
+            </div>
+          </section>
+          <section class="middlecolumn">
+            <div class="middlecolumn__wrapper">
+              <div class="middlecolumn__header">
+                <div class="chat-info">
+                  <div class="chat-info__service">
+                    <h3>Online Consultation</h3>
+                    <button class="chat-info__button" type="button" aria-label="Open setting."></button>
+                  </div>
+                  <div class="chat-info__subtitle">
+                    <h3>Feb 22, 2017; 10:30-11:00 am, Approved</h3>
+                    <p>Paid</p>
+                  </div>
+                </div>
+                <a type="button" aria-label="Help and support.">
+                  <ul class="help-chat">
+                    <li class="help-chat__item">
+                      Help
+                    </li>
+                    <li class="help-chat__item">
+                      Support
+                    </li>
+                  </ul>
+                </a>
+              </div>
+              <div class="consultation">
+                <div class="consultation__info">
+                  <div class="consultation__date">
+                    <h3>Consultation Note <span>draft</span>, Feb 22, 2017</h3>
+                  </div>
+                  <div class="consultation__show">
+                    <h3>Show:</h3>
+                    <ul>
+                      <li>
+                        <a class="consultation__link" href="#">
+                          <svg width="16" height="18">
+                            <use href="img/sprite.svg#show-medical"></use>
+                          </svg>
+                          Medical Records
+                        </a>
+                      </li>
+                      <li>
+                        <a class="consultation__link" href="#">
+                          <svg width="20" height="17">
+                            <use href="img/sprite.svg#show-image"></use>
+                          </svg>
+                          Images & Videos
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <form action="#" method="post">
+                  <div class="consultation__content">
+                    <fieldset class="accordion">
+                      <legend class="visually-hidden">Consultation list</legend>
+                      <ul class="accordion__list">
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox" name="Chief Complains">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>CC</h3>
+                                <p>Chief Complains</p>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox"
+                              name="History of Present Illness" checked>
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>HPI</h3>
+                                <p>History of Present Illness</p>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox"
+                              name="Physician Examination">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>PE</h3>
+                                <p>Physician Examination</p>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox"
+                              name="Previous Medical History">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>PMH</h3>
+                                <p>Previous Medical History</p>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox"
+                              name="Previous Surgical History">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>PSH</h3>
+                                <p>Previous Surgical History</p>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox" name="MEDS" checked>
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>MEDS</h3>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox" name="Allergy">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>ALL</h3>
+                                <p>Allergy</p>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox" name="Social History">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>SH</h3>
+                                <p>Social History</p>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox"
+                              name="Other Objective Findings">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>Other Objective Findings</h3>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox"
+                              name="Review of Previous Medical Records">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>Review of Previous Medical Records</h3>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox" name="Assesment">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>Assesment</h3>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox" name="Plan">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>Plan</h3>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                        <li class="accordion__element">
+                          <label class="accordion__control">
+                            <input class="visually-hidden accordion__input" type="checkbox" name="Plan Detalis">
+                            <div class="accordion__content">
+                              <span class="accordion__mark"></span>
+                              <div class="accordion__text">
+                                <h3>Plan Detalis</h3>
+                              </div>
+                              <button type="button" aria-label="Open details.">
+                                <div class="accordion__arrow"></div>
+                              </button>
+                            </div>
+                          </label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                    <div class="addendum">
+                      <button type="button" aria-label="Addendum.">Addendum</button>
+                    </div>
+                    <fieldset class="options">
+                      <div class="options__wrapper">
+                        <legend>Note Options:</legend>
+                        <label class="options__control">
+                          <input class="visually-hidden options__input" type="checkbox" name="Lock from Staff" checked>
+                          <span class="options__mark"></span>
+                          <span class="options__label">Lock from Staff</span>
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                  <div class="consultation__footer">
+                    <div class="consultation__submit">
+                      <button class="consultation__button consultation__button-apply" type="submit">Save as Draft</button>
+                      <button class="consultation__button consultation__button-cancel" type="reset">Save & Lock</button>
+                    </div>
+                    <div class="consultation__changes-saved">
+                      <svg width="16" height="15">
+                        <use href="img/sprite.svg#changes-saved"></use>
+                      </svg>
+                      <span>All changes saved in 3:58 pm</span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

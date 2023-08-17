@@ -1,0 +1,23 @@
+.leftcolumn-message__input {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.leftcolumn-message__input input {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  color: #a1a7b6;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 400;
+
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color: #a1a7b6;
+    font-family: $ff-open-sans-italic;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+  }
+}

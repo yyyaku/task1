@@ -1,7 +1,7 @@
 .chat-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .chat-item__status {
@@ -36,7 +36,7 @@
 }
 
 .chat-item__row h3 {
-  margin: 0;
+  margin: 0 0 -5px;
   color: #565c6c;
   font-size: 13px;
   font-weight: 600;
@@ -44,7 +44,8 @@
 
 .chat-item__button {
   position: absolute;
-  right: 65px;
+  right: 63px;
+  top: 0;
   z-index: 2;
   display: block;
   width: 3px;
@@ -57,12 +58,10 @@
   &::before {
     position: absolute;
     content: "";
-    top: 0;
-    right: 0;
     width: 3px;
     height: 3px;
     background-color: #5c5c5c;
-    box-shadow: 0 7px 0 0 #5c5c5c, 0 14px 0 0 #5c5c5c;
+    box-shadow: 0 5px 0 0 #5c5c5c, 0 10px 0 0 #5c5c5c;
   }
 }
 
@@ -70,5 +69,5 @@
   margin: 0;
   color: #565c6c;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
 }

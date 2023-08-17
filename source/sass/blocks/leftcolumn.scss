@@ -5,19 +5,35 @@
 }
 
 .leftcolumn__header {
-  padding: 13px 10px;
+  position: relative;
+  padding: 13px 15px;
   width: 100%;
   height: 66px;
-  border: 1px solid #dfe3ec;
-  border-width: 0 1px 1px 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(28, 51, 116, 0.2);
+    z-index: 2;
+  }
 }
 
-.leftcolumn-input {
-  padding: 13px 10px;
-}
+.leftcolumn__footer {
+  position: relative;
+  max-height: 42px;
 
-.leftcolumn-input span {
-  color: #a1a7b6;
-  font-family: $ff-open-sans-italic;
-  font-size: 13px;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(28, 51, 116, 0.2);
+    z-index: 2;
+  }
 }

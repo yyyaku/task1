@@ -1,0 +1,82 @@
+.recording {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px 0;
+  padding: 19px 0;
+  background-color: #2e3137;
+}
+
+.recording__start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px 0;
+}
+
+.recording__start button {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/start.png");
+    background-size: 18px 18px;
+  }
+}
+
+.recording__start span {
+  color: #ffffff;
+  font-family: $ff-open-sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.recording__state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px 0;
+  color: #ffffff;
+}
+
+.recording__state span {
+  font-family: $ff-open-sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.recording__state h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+}
+
+.recording__button {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.recording__button button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

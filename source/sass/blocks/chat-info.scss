@@ -1,6 +1,6 @@
 .chat-info {
   display: flex;
-  gap: 0 46px;
+  gap: 0 43px;
 }
 
 .chat-info__service {
@@ -13,13 +13,14 @@
   margin: 0;
   color: #2e3137;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 14px;
 }
 
 .chat-info__button {
   position: absolute;
-  right: -10px;
+  top: -3px;
+  right: -13px;
   z-index: 2;
   display: block;
   width: 5px;
@@ -46,6 +47,6 @@
   margin: 0;
   color: #565c6c;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 18px;
 }

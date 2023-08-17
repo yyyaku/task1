@@ -21,6 +21,28 @@
       <div class="container">
         <section class="navbar">
           <button class="navbar__toggle" type="button" aria-label="Меню.">Site menu</button>
+          <div class="recording">
+            <div class="recording__start">
+              <button type="button"></button>
+              <span>Start</span>
+            </div>
+            <div class="recording__state">
+              <span>00:05</span>
+              <h3>minutes remaining</h3>
+            </div>
+            <div class="recording__button">
+              <button class="recording__audio" type="button">
+                <svg width="14" height="22">
+                  <use href="img/sprite.svg#audio"></use>
+                </svg>
+              </button>
+              <button class="recording__video" type="button">
+                <svg width="22" height="14">
+                  <use href="img/sprite.svg#video"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
           <ul class="navbar__list">
             <li class="navbar__item">
               <a href="#">
@@ -36,6 +58,7 @@
                   <use href="img/sprite.svg#notes"></use>
                 </svg>
                 Previous Notes
+                <div class="navbar__triangle"></div>
               </a>
             </li>
             <li class="navbar__item">
@@ -97,8 +120,13 @@
               </div>
             </div>
             <div class="leftcolumn__footer">
-              <div class="leftcolumn-input">
-                <span>Your message here...</span>
+              <div class="leftcolumn-message">
+                <form method="post" action="#">
+                  <fieldset class="leftcolumn-message__input">
+                    <label class="visually-hidden" for="message-field"></label>
+                    <input type="text" name="message" id="message-field" placeholder="Your message here...">
+                  </fieldset>
+                </form>
               </div>
             </div>
           </section>
@@ -115,7 +143,7 @@
                     <p>Paid</p>
                   </div>
                 </div>
-                <a type="button" aria-label="Help and support.">
+                <a type="button" href="#">
                   <ul class="help-chat">
                     <li class="help-chat__item">
                       Help
@@ -154,6 +182,9 @@
                   </div>
                 </div>
                 <form action="#" method="post">
+                  <button class="column-width-button" type="button" aria-label="column-width">
+                    <div class="column-width-button-div"></div>
+                  </button>
                   <div class="consultation__content">
                     <fieldset class="accordion">
                       <legend class="visually-hidden">Consultation list</legend>
@@ -281,7 +312,7 @@
                             </div>
                           </label>
                         </li>
-                        <li class="accordion__element">
+                        <li class="accordion__element accordion__element--no-description">
                           <label class="accordion__control">
                             <input class="visually-hidden accordion__input" type="checkbox"
                               name="Other Objective Findings">
@@ -296,7 +327,7 @@
                             </div>
                           </label>
                         </li>
-                        <li class="accordion__element">
+                        <li class="accordion__element accordion__element--no-description">
                           <label class="accordion__control">
                             <input class="visually-hidden accordion__input" type="checkbox"
                               name="Review of Previous Medical Records">
@@ -311,7 +342,7 @@
                             </div>
                           </label>
                         </li>
-                        <li class="accordion__element">
+                        <li class="accordion__element accordion__element--no-description">
                           <label class="accordion__control">
                             <input class="visually-hidden accordion__input" type="checkbox" name="Assesment">
                             <div class="accordion__content">
@@ -325,7 +356,7 @@
                             </div>
                           </label>
                         </li>
-                        <li class="accordion__element">
+                        <li class="accordion__element accordion__element--no-description">
                           <label class="accordion__control">
                             <input class="visually-hidden accordion__input" type="checkbox" name="Plan">
                             <div class="accordion__content">
@@ -339,7 +370,7 @@
                             </div>
                           </label>
                         </li>
-                        <li class="accordion__element">
+                        <li class="accordion__element accordion__element--no-description">
                           <label class="accordion__control">
                             <input class="visually-hidden accordion__input" type="checkbox" name="Plan Detalis">
                             <div class="accordion__content">
@@ -371,7 +402,8 @@
                   </div>
                   <div class="consultation__footer">
                     <div class="consultation__submit">
-                      <button class="consultation__button consultation__button-apply" type="submit">Save as Draft</button>
+                      <button class="consultation__button consultation__button-apply" type="submit">Save as
+                        Draft</button>
                       <button class="consultation__button consultation__button-cancel" type="reset">Save & Lock</button>
                     </div>
                     <div class="consultation__changes-saved">
